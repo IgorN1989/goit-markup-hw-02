@@ -1,0 +1,106 @@
+/* колір основного тексту #757575 */
+/* колір вторинного тексту #212121 */
+/* білий колір  #FFFFFF */
+/* акцент #2196F3 */
+/* чорний лого #000000 */
+/* вторинний білий колір rgba(255, 255, 255, 0.6)*/
+/* вторинний фон #F5F4FA */
+/* фон героя та футера #2F303A */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+
+.page {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* Logo */
+
+.logo {
+  color: var(--accent-color);
+}
+
+.logo-header {
+  color: #000000;
+}
+
+.logo-footer {
+  color: var(--primary-white-color);
+}
+
+/* Navigation */
+
+.nav-item {
+  color: var(--title-text-color);
+}
+.nav-item:hover,
+.nav-item:focus {
+  color: var(--accent-color);
+}
+
+/* Contacts */
+
+.contacts-item {
+  color: inherit;
+}
+
+.contacts-item:hover,
+.contacts-item:focus {
+  color: var(--accent-color);
+}
+
+/* Hero (фон тимчасовий) */
+
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+}
+
+/* Section */
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Features */
+
+.features-title {
+  color: var(--title-text-color);
+}
+
+/* Specifications */
+
+/* Team */
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.teammate {
+  color: var(--title-text-color);
+}
+
+/* Footer */
+
+.footer {
+  background-color: #2f303a;
+}
+
+/* Buttons */
+
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
