@@ -12,12 +12,19 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
-  --secondary-background-color:#F5F4FA;
+  --primary-black-color: #000000;
+  --order-button-color: #188ce8;
+  --secondary-background-color: #f5f4fa;
+  --footer-background-color: #2f303a;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .list {
@@ -28,10 +35,15 @@ body {
 
 .logo {
   color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  text-decoration: none;
 }
 
 .logo-header {
-  color: #000000;
+  color: var(--primary-black-color);
 }
 
 .logo-footer {
@@ -41,12 +53,17 @@ body {
 /* Navigation */
 
 .nav-list .current {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .nav-item {
   color: var(--title-text-color);
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
+
 .nav-item:hover,
 .nav-item:focus {
   color: var(--accent-color);
@@ -56,6 +73,10 @@ body {
 
 .contacts-item {
   color: inherit;
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .contacts-item:hover,
@@ -63,26 +84,44 @@ body {
   color: var(--accent-color);
 }
 
-/* Hero (фон тимчасовий) */
+/* Hero */
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--footer-background-color);
+  /* (фон тимчасовий) */
 }
 
 .hero-title {
   color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* Section */
 
 .section-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
 }
 
 /* Features */
 
 .features-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+}
+
+.features-text {
+  line-height: calc(24 / 14);
 }
 
 /* Specifications */
@@ -93,46 +132,87 @@ body {
   background-color: var(--secondary-background-color);
 }
 
+.teammate,
+.teammate-position {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}
+
 .teammate {
   color: var(--title-text-color);
+  font-weight: 500;
 }
 
 /* Footer */
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-background-color);
 }
 
 .address {
-    color: var(--primary-white-color);
+  color: var(--primary-white-color);
+  line-height: calc(24 / 14);
+  text-decoration: none;
+  font-style: normal;
 }
 
 .email,
 .number {
-    color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contacts-color);
+  line-height: calc(24 / 14);
+  text-decoration: none;
+  font-style: normal;
 }
 
 /* Buttons */
 
-.order-button{
+.button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.order-button {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.order-button:hover {
+  background-color: var(--order-button-color);
 }
 
 .filter-button {
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.03em;
 }
 
 .filter-button:hover,
 .filter-button:focus,
 .filter-button:active {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 
 /* Examples */
 
 .example-title {
-    color: var(--title-text-color);
+  color: var(--title-text-color);
+text-transform: capitalize;
+}
+
+.example-type {
+text-transform: capitalize;
 }
