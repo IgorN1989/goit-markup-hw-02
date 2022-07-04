@@ -3,7 +3,7 @@
 /* білий колір  #FFFFFF */
 /* акцент #2196F3 */
 /* чорний лого #000000 */
-/* вторинний білий колір rgba(255, 255, 255, 0.6)*/
+/* вторинний білий колір rgba(255, 255, 255, 0.6) */
 /* вторинний фон #F5F4FA */
 /* фон героя та футера #2F303A */
 
@@ -38,6 +38,10 @@
 }
 
 /* Navigation */
+
+.nav-list .current {
+    color: var(--accent-color);
+}
 
 .nav-item {
   color: var(--title-text-color);
@@ -96,6 +100,15 @@
 
 .footer {
   background-color: #2f303a;
+}
+
+.address {
+    color: var(--primary-white-color);
+}
+
+.email,
+.number {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* Buttons */
