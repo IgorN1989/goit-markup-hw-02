@@ -12,9 +12,10 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --secondary-background-color:#F5F4FA;
 }
 
-.page {
+body {
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
 }
@@ -89,7 +90,7 @@
 /* Team */
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--secondary-background-color);
 }
 
 .teammate {
@@ -113,7 +114,25 @@
 
 /* Buttons */
 
-.button {
+.order-button{
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+
+.filter-button {
+  color: var(--title-text-color);
+  background-color: var(--secondary-background-color);
+}
+
+.filter-button:hover,
+.filter-button:focus,
+.filter-button:active {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+/* Examples */
+
+.example-title {
+    color: var(--title-text-color);
 }
