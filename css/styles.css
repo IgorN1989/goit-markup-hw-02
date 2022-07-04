@@ -170,6 +170,7 @@ body {
 .number:hover,
 .number:focus {
   color: var(--accent-color);
+  /* на макеті не зазначено на який колір повині змінюватися контакти */
 }
 
 /* Buttons */
